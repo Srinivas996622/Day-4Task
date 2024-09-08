@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .outer{
+            border: 2px solid;
+            width:1520px;
+            height: 710px;
+        }
+        .Lcorn{
+            width: 50px;
+            height: 706px;
+            border-radius: 5px;
+            margin: 1px;background-color: #ECE5DD;
+            position: absolute;
+            top: 10.5px;
+            left:9px;
+
+        }
+        .Lcorn2{
+            border: 0.5px solid;
+            width: 404px;
+            height: 704px;
+            position: absolute;
+            left: 61px;
+            top: 11.5px;
+        }
+        .Top{
+            border: 0.5px solid;
+            width: 1060.5px;
+            height: 70px;
+            position: absolute;
+            top: 11px;
+            left: 466px;
+        }
+        .WTI{
+            margin-top:10px;
+            margin-left:10px;
+        }
+        .Main{
+            border:0.5px solid;
+            height: 590px;
+            width: 1059.5px;
+            position: absolute;
+            background-image: url(https://as1.ftcdn.net/v2/jpg/04/18/87/48/1000_F_418874896_qSfcISJhMoGUuZLIy5H4snGdh2hHAH4r.jpg);
+            top: 83px;
+            left: 467px;
+            overflow-y: scroll;
+        } 
+        .BSrch{
+            border: 0.5px solid;
+            width: 1059.5px;
+            height: 40px;
+            position: absolute;
+            top: 675px;
+            left: 467px;
+        }
+        .CL1{
+            position: absolute;
+            top: 70px;
+            left: 15px;
+        }
+        .Ca1{
+            position: absolute;
+            top: 90px;
+            left: -4px;
+        }
+        .SL{
+            position: absolute;
+            top: 155px;
+            left: 10px;
+        }
+        .SM{
+            position: absolute;
+            top: 550px;
+            left: 10px;
+        }
+        .AM{
+            position: absolute;
+            top: 590px;
+            left: 15px;
+        }
+        .Set{
+            position: absolute;
+            top: 625px;
+            left: 12px;
+        }
+        .DP{
+            border: 0.5px solid;
+            width: 30px;
+            height: 30px;
+            background-image: url("./Assests/Images/mine.jpg");
+            background-size: cover;
+            border-radius: 20px;
+            position: absolute;
+            top: 660px;
+            left: 9px;
+        }
+        .TopS{
+            border: 0.5px solid;
+            width: 404px;
+            height: 81px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+        }
+        .People{
+            border: 0.5px solid;
+            width: 404px;
+            height: 625px;
+            overflow-y: scroll;
+            position: absolute;
+            top: 78px;
+        }
+        .txt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            position: absolute;
+            top: -9px;
+            left: 20px;
+        }
+        .SrBox>input{
+            height: 20px;
+            width: 300px;
+            position: absolute;
+            top: 45px;
+            left: 15px;
+        }
+        .SrB{
+            position: absolute;
+            top:47px;
+            left: 330px;
+        }
+        .Filt{            
+            position: absolute;
+            top: 7px;
+            left: 330px;
+        }
+        .NC{
+            position: absolute;
+            top: 8px;
+            left: 280px;
+        }
+        .P1{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .P2{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 55px;
+            left: 0px;
+        }
+        .P3{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 110px;
+            left: 0px;
+        }
+        .P4{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 165px;
+            left: 0px;
+        }
+        .P5{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 220px;
+            left: 0px;
+        }
+        .P6{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 275px;
+            left: 0px;
+        }
+        .P7{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 330px;
+            left: 0px;
+        }
+        .P8{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 385px;
+            left: 0px;
+        }
+        .P9{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 440px;
+            left: 0px;
+        }
+        .P10{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 495px;
+            left: 0px;
+        }
+        .P11{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 550px;
+            left: 0px;
+        }
+        .P12{
+            border: 0.5px solid;
+            width: 385px;
+            height: 55px;
+            position: absolute;
+            top: 605px;
+            left: 0px;
+        }
+        .P1Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://www.imagella.com/cdn/shop/products/3ed1d70654090cbe28e96c848c6630e0.jpg?v=1708028442");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P2Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://staticimg.amarujala.com/assets/images/2023/06/21/whatsapp-dp_1687343435.jpeg");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P3Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://photosvibe.in/wp-content/uploads/2024/05/sad-boy-dp-images-for-whatsapp_43.webp");
+            background-size: contain;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P4Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://t4.ftcdn.net/jpg/01/61/89/31/360_F_161893156_ol3tUwZYu0blHhWwSgQaMPp0ZrUg1FSg.jpg");
+            background-size: contain;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P5Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://photosnow.org/wp-content/uploads/2024/04/whatsapp-dp-33.jpg");
+            background-size: contain;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P6Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://ashisheditz.com/wp-content/uploads/2024/02/full-black-whatsapp-dp.jpg");
+            background-size: contain;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P7Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMOR012wFmBA9XH1Mg-OerbZd_ybxFnSd6Uipk8lFM2xaWMc-lzPLAej2y4h58Vqkbl8BEYzRDNlyiLG9FilbGDkbnrgUSb0MFN8k6De4xEmu0LKp758MRjgTWDbPyYCWA1ocFQP9v3aE7Hy69CwAcLUxa9T193tKsSPmxXahFhy2cYcKzVxSbpDxHPA/s500/republic%20day%20dp.jpg");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P8Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://theshreekrishna.com/wp-content/uploads/2024/05/instagram-cute-krishna-dp-for-whatsapp.webp");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P9Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://images.statusfacebook.com/profile_pictures/creative/creative-whatsapp-dp-01.jpg");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P10Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqWkDcPUfAUUyzUK8Tsyljt1eJcvaNBISyuIUm21SBYG7utpCAMj2IgF0KBx5OeBWzcrU&usqp=CAU");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P11Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://i.pinimg.com/736x/c5/10/3a/c5103a05bcc33204a7012b8a1cd6be8e.jpg");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .P12Dp{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJgr4YEUAmRFIlr6UBdF4AiDlPNTWFoaLzgBEhpHw0UxVqzN8_4HEixYdOTMEPkK0Jb_g&usqp=CAU");
+            background-size: cover;
+            position: absolute;
+            top: 3.5px;
+            left: 15px;
+        }
+        .Name1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 80px;
+            top: -12px;
+        }
+        .Tick{
+            position: absolute;
+            top: 25px;
+            left: 70px;
+        }
+        .MSG1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 100px;
+            top: 18px;
+        }
+        .T1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 330px;
+            top: 10px;
+        }
+        .T2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            position: absolute;
+            left: 300px;
+            top: 10px;
+        }
+        .Srinu{
+            border: 0.5px solid;
+            width: 45px;
+            height: 45px;
+            border-radius: 45px;
+            background-image: url("https://www.imagella.com/cdn/shop/products/3ed1d70654090cbe28e96c848c6630e0.jpg?v=1708028442");
+            background-size: cover;
+            position: absolute;
+            top: 10.5px;
+            left: 25px;
+        }
+        .VCBor{
+            border: 1px ridge;
+            width: 120px;
+            height: 45px;
+            border-radius: 4px;
+            position: absolute;
+            top: 10px;
+            left: 860px;
+        }
+        .NameM{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            left: 100px;
+            top: -0.5px;
+        }
+        .VCI{
+            position: absolute;
+            left: 870px;
+            top: 15px;
+        }
+        .ACI{
+            position: absolute;
+            left: 930px;
+            top: 15px;
+        }
+        .MSrch{
+            position: absolute;
+            left: 990px;
+            top: 15px;
+        }
+        .Smile{
+            position: absolute;
+            top: 11px;
+            left: 25px;
+        }
+        .Link{
+            position: absolute;
+            top: 11px;
+            left: 70px;
+        }
+        .Mic{
+            position: absolute;
+            top: 9px;
+            left: 1000px;
+        }
+        .SrcTxt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            left: 120px;
+            top: -12px;
+        }
+        .L1{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+        .R1{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 70px;
+            left: 880px;
+        }
+        .L2{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 120px;
+            left: 50px;
+        }
+        .R2{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 170px;
+            left: 880px;
+        }
+        .L3{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 220px;
+            left: 50px;
+        }
+        .R3{
+            border: 0.5px solid;
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 270px;
+            left: 829px;
+        }
+        .L4{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 320px;
+            left: 50px;
+        }
+        .R4{
+            border: 0.5px solid;
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 370px;
+            left: 829px;
+        }
+        .L5{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 420px;
+            left: 50px;
+        }
+        .R5{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 470px;
+            left: 880px;
+        }
+        .L6{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 520px;
+            left: 50px;
+        }
+        .R6{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 570px;
+            left: 880px;
+
+        }
+        .L7{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 620px;
+            left: 50px;
+        }
+        .R7{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 670px;
+            left: 880px;
+        }
+        .L8{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 720px;
+            left: 50px;
+        }
+        .R8{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366; 
+            position: relative;
+            top: 770px;
+            left: 880px;
+        }
+        .L9{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 820px;
+            left: 50px;
+        }
+        .R9{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 870px;
+            left: 880px;
+        }
+        .L10{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: white;
+            position: relative;
+            top: 920px;
+            left: 50px;
+        }
+        .R10{
+            border: 0.5px solid;
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            background-color:#25D366;
+            position: relative;
+            top: 970px;
+            left: 880px;
+        }
+        .L1M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px; 
+        }
+        .R1M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .L2M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px; 
+        }
+        .R2M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .L3M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .R3M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .L4M{font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .R4M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .L5M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .R5M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .R3M{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: -11px;
+            left: 20px;
+        }
+        .Sun{
+            background-color: rgb(184, 180, 180);
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            position: sticky;
+            top: 1px;
+            left: 500px;
+        }
+        .SunM{
+            position: relative;
+            top: 5px;
+            left: 25px;
+        }
+        .Mon{
+            background-color: rgb(184, 180, 180);
+            height: 30px;
+            width: 100px;
+            border-radius: 10px;
+            position: sticky;
+            top: 1px;
+            left: 500px;
+        }
+        .MonM{
+            position: relative;
+            top: 5px;
+            left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="Lcorn">
+            <div class="DP"></div>
+            <div class="Set"><img src="../Assests/icons/gear.svg"></div>
+            <div class="AM"><img src="../Assests/icons/archive.svg" height="20px" width="20px"></div>
+            <div class="SM"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17.2 20.7501C17.0776 20.7499 16.9573 20.7189 16.85 20.6601L12 18.1101L7.14999 20.6601C7.02675 20.7262 6.88746 20.7566 6.74786 20.7478C6.60825 20.7389 6.47391 20.6912 6.35999 20.6101C6.24625 20.5267 6.15796 20.4133 6.10497 20.2826C6.05199 20.1519 6.03642 20.0091 6.05999 19.8701L6.99999 14.4701L3.05999 10.6501C2.96124 10.5512 2.89207 10.4268 2.86027 10.2907C2.82846 10.1547 2.83529 10.0124 2.87999 9.88005C2.92186 9.74719 3.00038 9.62884 3.10652 9.53862C3.21266 9.4484 3.34211 9.38997 3.47999 9.37005L8.89999 8.58005L11.33 3.67005C11.3991 3.55403 11.4973 3.45795 11.6147 3.39123C11.7322 3.32451 11.8649 3.28943 12 3.28943C12.1351 3.28943 12.2678 3.32451 12.3853 3.39123C12.5027 3.45795 12.6008 3.55403 12.67 3.67005L15.1 8.58005L20.52 9.37005C20.6579 9.38997 20.7873 9.4484 20.8935 9.53862C20.9996 9.62884 21.0781 9.74719 21.12 9.88005C21.1647 10.0124 21.1715 10.1547 21.1397 10.2907C21.1079 10.4268 21.0387 10.5512 20.94 10.6501L17 14.4701L17.93 19.8701C17.9536 20.0091 17.938 20.1519 17.885 20.2826C17.832 20.4133 17.7437 20.5267 17.63 20.6101C17.5034 20.6976 17.3539 20.7463 17.2 20.7501ZM12 16.5201C12.121 16.5215 12.2403 16.5488 12.35 16.6001L16.2 18.6001L15.47 14.3101C15.4502 14.1897 15.4589 14.0664 15.4953 13.9501C15.5318 13.8337 15.595 13.7275 15.68 13.6401L18.8 10.6401L14.49 10.0001C14.3708 9.98109 14.2578 9.93401 14.1605 9.86271C14.0631 9.79141 13.9841 9.69795 13.93 9.59005L12 5.69005L10.07 9.60005C10.0159 9.70795 9.9369 9.80141 9.83952 9.87271C9.74214 9.94401 9.62918 9.99109 9.50999 10.0101L5.19999 10.6401L8.31999 13.6401C8.40493 13.7275 8.46817 13.8337 8.50464 13.9501C8.54111 14.0664 8.54979 14.1897 8.52999 14.3101L7.79999 18.6301L11.65 16.6301C11.7573 16.5683 11.8767 16.5308 12 16.5201Z" fill="#000000"></path> </g></svg></div>
+            <div class="SL"><svg width="30px" height="30px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" class="hds-flight-icon--animation-running" transform="rotate(-45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#000000" fill-rule="evenodd" clip-rule="evenodd"> <path d="M8 1.5a6.48 6.48 0 00-4.707 2.017.75.75 0 11-1.086-1.034A7.98 7.98 0 018 0a7.98 7.98 0 015.793 2.483.75.75 0 11-1.086 1.034A6.48 6.48 0 008 1.5zM1.236 5.279a.75.75 0 01.514.927 6.503 6.503 0 004.727 8.115.75.75 0 11-.349 1.459 8.003 8.003 0 01-5.82-9.986.75.75 0 01.928-.515zm13.528 0a.75.75 0 01.928.515 8.003 8.003 0 01-5.82 9.986.75.75 0 01-.35-1.459 6.503 6.503 0 004.728-8.115.75.75 0 01.514-.927z"></path> <path d="M8 4.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zM3 8a5 5 0 1110 0A5 5 0 013 8z" opacity=".2"></path> </g> </g></svg></div>        <div class="CL1"><svg fill="#4c4848" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="18px" viewBox="0 0 24.75 24.75" xml:space="preserve" stroke="#4c4848" stroke-width="0.0002475"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,3.875c0-1.104,0.896-2,2-2h20.75c1.104,0,2,0.896,2,2s-0.896,2-2,2H2C0.896,5.875,0,4.979,0,3.875z M22.75,10.375H2 c-1.104,0-2,0.896-2,2c0,1.104,0.896,2,2,2h20.75c1.104,0,2-0.896,2-2C24.75,11.271,23.855,10.375,22.75,10.375z M22.75,18.875H2 c-1.104,0-2,0.896-2,2s0.896,2,2,2h20.75c1.104,0,2-0.896,2-2S23.855,18.875,22.75,18.875z"></path> </g> </g></svg></div>
+            <div class="Ca1"><svg width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)matrix(-1, 0, 0, -1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52024 7.76662C9.33885 7.35303 9.13737 7.34298 8.96603 7.34298C8.81477 7.33294 8.65288 7.33294 8.48154 7.33294C8.32083 7.33294 8.04845 7.3932 7.81684 7.64549C7.58464 7.89719 6.95007 8.49217 6.95007 9.71167C6.95007 10.9318 7.83693 12.1111 7.95805 12.2724C8.07858 12.4337 9.67149 15.0139 12.192 16.0124C14.2883 16.839 14.712 16.6777 15.1657 16.6269C15.6189 16.5767 16.6275 16.0325 16.839 15.4476C17.0405 14.8733 17.0405 14.3693 16.9802 14.2682C16.9199 14.1678 16.748 14.1069 16.5064 13.9758C16.2541 13.8552 15.0446 13.2502 14.813 13.1693C14.5808 13.0889 14.4195 13.0487 14.2582 13.2904C14.0969 13.5427 13.623 14.0969 13.4724 14.2582C13.3306 14.4195 13.1799 14.4396 12.9377 14.3185C12.686 14.1979 11.8895 13.9356 10.9418 13.0889C10.2056 12.4331 9.71167 11.6171 9.56041 11.3755C9.41979 11.1232 9.54032 10.992 9.67149 10.8709C9.78257 10.7604 9.92378 10.579 10.0449 10.4378C10.1654 10.296 10.2056 10.1855 10.2966 10.0242C10.377 9.86292 10.3368 9.71167 10.2765 9.59114C10.2157 9.48006 9.74239 8.26056 9.52024 7.76662Z" stroke="#000000" stroke-linejoin="round"></path> </g></svg></div>
+            <div class="WTI"><svg width="30px" height="30px" viewBox="-2.73 0 1225.016 1225.016" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#E0E0E0" d="M1041.858 178.02C927.206 63.289 774.753.07 612.325 0 277.617 0 5.232 272.298 5.098 606.991c-.039 106.986 27.915 211.42 81.048 303.476L0 1225.016l321.898-84.406c88.689 48.368 188.547 73.855 290.166 73.896h.258.003c334.654 0 607.08-272.346 607.222-607.023.056-162.208-63.052-314.724-177.689-429.463zm-429.533 933.963h-.197c-90.578-.048-179.402-24.366-256.878-70.339l-18.438-10.93-191.021 50.083 51-186.176-12.013-19.087c-50.525-80.336-77.198-173.175-77.16-268.504.111-278.186 226.507-504.503 504.898-504.503 134.812.056 261.519 52.604 356.814 147.965 95.289 95.36 147.728 222.128 147.688 356.948-.118 278.195-226.522 504.543-504.693 504.543z"></path><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="609.77" y1="1190.114" x2="609.77" y2="21.084"><stop offset="0" stop-color="#20b038"></stop><stop offset="1" stop-color="#60d66a"></stop></linearGradient><path fill="url(#a)" d="M27.875 1190.114l82.211-300.18c-50.719-87.852-77.391-187.523-77.359-289.602.133-319.398 260.078-579.25 579.469-579.25 155.016.07 300.508 60.398 409.898 169.891 109.414 109.492 169.633 255.031 169.57 409.812-.133 319.406-260.094 579.281-579.445 579.281-.023 0 .016 0 0 0h-.258c-96.977-.031-192.266-24.375-276.898-70.5l-307.188 80.548z"></path><image overflow="visible" opacity=".08" width="682" height="639" xlink:href="FCC0802E2AF8A915.png" transform="translate(270.984 291.372)"></image><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M462.273 349.294c-11.234-24.977-23.062-25.477-33.75-25.914-8.742-.375-18.75-.352-28.742-.352-10 0-26.25 3.758-39.992 18.766-13.75 15.008-52.5 51.289-52.5 125.078 0 73.797 53.75 145.102 61.242 155.117 7.5 10 103.758 166.266 256.203 226.383 126.695 49.961 152.477 40.023 179.977 37.523s88.734-36.273 101.234-71.297c12.5-35.016 12.5-65.031 8.75-71.305-3.75-6.25-13.75-10-28.75-17.5s-88.734-43.789-102.484-48.789-23.75-7.5-33.75 7.516c-10 15-38.727 48.773-47.477 58.773-8.75 10.023-17.5 11.273-32.5 3.773-15-7.523-63.305-23.344-120.609-74.438-44.586-39.75-74.688-88.844-83.438-103.859-8.75-15-.938-23.125 6.586-30.602 6.734-6.719 15-17.508 22.5-26.266 7.484-8.758 9.984-15.008 14.984-25.008 5-10.016 2.5-18.773-1.25-26.273s-32.898-81.67-46.234-111.326z"></path><path fill="#FFF" d="M1036.898 176.091C923.562 62.677 772.859.185 612.297.114 281.43.114 12.172 269.286 12.039 600.137 12 705.896 39.633 809.13 92.156 900.13L7 1211.067l318.203-83.438c87.672 47.812 186.383 73.008 286.836 73.047h.255.003c330.812 0 600.109-269.219 600.25-600.055.055-160.343-62.328-311.108-175.649-424.53zm-424.601 923.242h-.195c-89.539-.047-177.344-24.086-253.93-69.531l-18.227-10.805-188.828 49.508 50.414-184.039-11.875-18.867c-49.945-79.414-76.312-171.188-76.273-265.422.109-274.992 223.906-498.711 499.102-498.711 133.266.055 258.516 52 352.719 146.266 94.195 94.266 146.031 219.578 145.992 352.852-.118 274.999-223.923 498.749-498.899 498.749z"></path></g></svg></div>
+        </div>
+        <div class="Lcorn2">
+            <div class="TopS">
+                <div class="txt"><h3>Chats</h3></div>
+                <div class="SrB"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_15_152)"> <rect width="24" height="24" fill="white"></rect> <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round"></circle> <path d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z" fill="#000000"></path> </g> <defs> <clipPath id="clip0_15_152"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg></div>
+                <div class="Filt"><svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12ZM9 17C9 16.4477 9.44772 16 10 16H14C14.5523 16 15 16.4477 15 17C15 17.5523 14.5523 18 14 18H10C9.44772 18 9 17.5523 9 17Z" fill="#000000"></path> </g></svg></div>
+                <div class="NC"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 10.5V12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2H13.5" stroke="#00020a" stroke-width="1.5" stroke-linecap="round"></path> <path d="M16.652 3.45506L17.3009 2.80624C18.3759 1.73125 20.1188 1.73125 21.1938 2.80624C22.2687 3.88124 22.2687 5.62415 21.1938 6.69914L20.5449 7.34795M16.652 3.45506C16.652 3.45506 16.7331 4.83379 17.9497 6.05032C19.1662 7.26685 20.5449 7.34795 20.5449 7.34795M16.652 3.45506L10.6872 9.41993C10.2832 9.82394 10.0812 10.0259 9.90743 10.2487C9.70249 10.5114 9.52679 10.7957 9.38344 11.0965C9.26191 11.3515 9.17157 11.6225 8.99089 12.1646L8.41242 13.9M20.5449 7.34795L14.5801 13.3128C14.1761 13.7168 13.9741 13.9188 13.7513 14.0926C13.4886 14.2975 13.2043 14.4732 12.9035 14.6166C12.6485 14.7381 12.3775 14.8284 11.8354 15.0091L10.1 15.5876M10.1 15.5876L8.97709 15.9619C8.71035 16.0508 8.41626 15.9814 8.21744 15.7826C8.01862 15.5837 7.9492 15.2897 8.03811 15.0229L8.41242 13.9M10.1 15.5876L8.41242 13.9" stroke="#00020a" stroke-width="1.5"></path> </g></svg></div>
+                <div class="SrBox">
+                    <input type="text" name="Firstname" placeholder="Search or start a new chart">
+                </div>
+            </div>
+            <div class="People">
+                <div class="P1">
+                    <div class="P1Dp"></div>
+                    <div class="Name1"><h3>Srinu Bava</h3></div>
+                    <div class="MSG1"><p>Hmm...</p></div>
+                    <div class="T1"><p1>11:28</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P2">
+                    <div class="P2Dp"></div>
+                    <div class="Name1"><h3>Bro</h3></div>
+                    <div class="MSG1"><p>When you reach home ...</p></div>
+                    <div class="T1"><p1>10:30</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P3">
+                    <div class="P3Dp"></div>
+                    <div class="Name1"><h3>Dad</h3></div>
+                    <div class="MSG1"><p>Pay 500 to Buy Vegitables</p></div>
+                    <div class="T1"><p1>10:17</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P4">
+                    <div class="P4Dp"></div>
+                    <div class="Name1"><h3>Mom</h3></div>
+                    <div class="MSG1"><p>I an the Way...</p></div>
+                    <div class="T1"><p1>10:05</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P5">
+                    <div class="P5Dp"></div>
+                    <div class="Name1"><h3>Mani bava</h3></div>
+                    <div class="MSG1"><p>I sent the Resume. Check</p></div>
+                    <div class="T1"><p1>09:43</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P6">
+                    <div class="P6Dp"></div>
+                    <div class="Name1"><h3>Sravani</h3></div>
+                    <div class="MSG1"><p>Many More Happy Returns..</p></div>
+                    <div class="T1"><p1>08:51</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P7">
+                    <div class="P7Dp"></div>
+                    <div class="Name1"><h3>Siva</h3></div>
+                    <div class="MSG1"><p>I return Back your Lappi...</p></div>
+                    <div class="T1"><p1>08:12</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P8">
+                    <div class="P8Dp"></div>
+                    <div class="Name1"><h3>Lazar</h3></div>
+                    <div class="MSG1"><p>What about your Coachi...</p></div>
+                    <div class="T1"><p1>06:28</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P9">
+                    <div class="P9Dp"></div>
+                    <div class="Name1"><h3>Leela Mawa</h3></div>
+                    <div class="MSG1"><p>Come To Hyd.</p></div>
+                    <div class="T2"><p1>Yesterday</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P10">
+                    <div class="P10Dp"></div>
+                    <div class="Name1"><h3>Nithish</h3></div>
+                    <div class="MSG1"><p>I meet you Tommorrow ...</p></div>
+                    <div class="T2"><p1>Yesterday</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P11">
+                    <div class="P11Dp"></div>
+                    <div class="Name1"><h3>Vampire</h3></div>
+                    <div class="MSG1"><p>Come to Online...</p></div>
+                    <div class="T2"><p1>Yesterday</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+                <div class="P12">
+                    <div class="P12Dp"></div>
+                    <div class="Name1"><h3>Actor#10k</h3></div>
+                    <div class="MSG1"><p>Call you Later Bro...</p></div>
+                    <div class="T2"><p1>Yesterday</p1></div>
+                    <div class="Tick"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.9L7.14286 16.5L15 7.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M20 7.5625L11.4283 16.5625L11 16" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+                </div>
+            </div>
+        </div>
+        <div class="Top">
+            <div class="Srinu"></div>
+            <div class="VCBor"></div>
+            <div class="NameM"><h3>Srinu Bava</h3></div>
+            <div class="VCI"><svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path d="M5 18H15C16.1046 18 17 17.1046 17 16V8.57143V8C17 6.89543 16.1046 6 15 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path> <circle cx="6.5" cy="9.5" r="0.5" stroke="#000000" stroke-linejoin="round"></circle> <path d="M17 10L21 7V17L17 14" stroke="#000000" stroke-linejoin="round"></path> </g></svg></div>
+            <div class="ACI"><svg width="35px" height="35px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.36343 6.36195C7.24343 5.43495 7.55443 5.17495 7.92943 5.05395C8.18895 4.98595 8.46112 4.98217 8.72243 5.04295C9.06643 5.14295 9.15743 5.21895 10.2854 6.34295C11.2764 7.32995 11.3754 7.43695 11.4704 7.62995C11.6521 7.96873 11.6805 8.36894 11.5484 8.72995C11.4484 9.00495 11.3064 9.18695 10.7054 9.78995L10.3134 10.183C10.2105 10.2876 10.1863 10.4464 10.2534 10.577C11.1244 12.0628 12.36 13.3019 13.8434 14.177C14.0142 14.2684 14.2245 14.2389 14.3634 14.104L14.7404 13.733C14.9734 13.4941 15.2202 13.2691 15.4794 13.059C15.8866 12.809 16.3939 12.7867 16.8214 13C17.0304 13.1 17.0994 13.162 18.1214 14.182C19.1754 15.233 19.2054 15.266 19.3214 15.507C19.5397 15.9059 19.5374 16.3891 19.3154 16.786C19.2024 17.01 19.1334 17.091 18.5404 17.697C18.1824 18.063 17.8454 18.397 17.7914 18.446C17.3022 18.851 16.6746 19.0497 16.0414 19C14.883 18.8944 13.7617 18.5363 12.7564 17.951C10.5296 16.7711 8.63383 15.0521 7.24243 12.951C6.93937 12.5112 6.66994 12.0492 6.43643 11.569C5.81001 10.4953 5.48653 9.27189 5.50043 8.02895C5.54825 7.37871 5.86008 6.77637 6.36343 6.36195Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
+            <div class="MSrch"><svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_15_152)"> <rect width="24" height="24" fill="white"></rect> <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round"></circle> <path d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z" fill="#000000"></path> </g> <defs> <clipPath id="clip0_15_152"> <rect width="30" height="30" fill="white"></rect> </clipPath> </defs> </g></svg></div>
+        </div>
+        <div class="Main">
+            <div class="Sun"><p class="SunM">Sunday</p></div>
+            <div class="L1"><p class="L1M">Hi</p></div>
+            <div class="R1"><p class="R1M">Hello</p></div>
+            <div class="L2"><p class="L2M">How are you?</p></div>
+            <div class="Sun"><p class="SunM">Monday</p></div>
+            <div class="R2"><p class="R2M">Iam fine.</p></div>
+            <div class="L3"><p class="L3M">Hmm...</p></div>
+            <div class="R3"><p class="R3M">What about you?</p></div>
+            <div class="L4"><p class="L4M">Iam Good</p></div>
+            <div class="Mon"><p class="MonM">Tuesday</p></div>
+            <div class="R4"><p class="R4M">Where are you ?</p></div>
+            <div class="L5"><p class="L5M">At Home</p></div>
+            <div class="R5"><p class="R5M">Ok Bava</p></div>
+            <div class="Sun"><p class="SunM">Wednesday</p></div>            
+            <div class="L6"><p class="L1M"></p>Hmm</div>
+            <div class="R6"><p class="R1M"></p>See you</div>
+            <div class="L7"><p class="L1M">OK Then</p></div>
+            <div class="Sun"><p class="SunM">Thursday</p></div>
+            <div class="R7"><p class="R1M">BYE</p></div>
+            <div class="L8"><p class="L1M">Good night</p></div>
+            <div class="R8"><p class="R1M">Good night</p></div>
+            <div class="Sun"><p class="SunM">Fryday</p></div>
+            <div class="L9"><p class="L1M">See you</p></div>
+            <div class="R9"><p class="R1M">Bye...</p></div>
+            <div class="Sun"><p class="SunM">Today</p></div>
+            <div class="L10"><p class="L1M">TaTa</p></div>
+            <div class="R10"><p class="R1M">Hmm...</p></div>
+        </div>
+        <div class="BSrch">
+            <div class="Smile"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.39747 15.5534C8.64413 15.2206 9.11385 15.1508 9.44661 15.3975C10.175 15.9373 11.0541 16.25 12 16.25C12.9459 16.25 13.825 15.9373 14.5534 15.3975C14.8862 15.1508 15.3559 15.2206 15.6025 15.5534C15.8492 15.8862 15.7794 16.3559 15.4466 16.6025C14.4742 17.3233 13.285 17.75 12 17.75C10.715 17.75 9.5258 17.3233 8.55339 16.6025C8.22062 16.3559 8.15082 15.8862 8.39747 15.5534Z" fill="#1C274C"></path> <path d="M16 10.5C16 11.3284 15.5523 12 15 12C14.4477 12 14 11.3284 14 10.5C14 9.67157 14.4477 9 15 9C15.5523 9 16 9.67157 16 10.5Z" fill="#1C274C"></path> <path d="M10 10.5C10 11.3284 9.55229 12 9 12C8.44772 12 8 11.3284 8 10.5C8 9.67157 8.44772 9 9 9C9.55229 9 10 9.67157 10 10.5Z" fill="#1C274C"></path> </g></svg></div>
+            <div class="Link"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.9175 17.8068L15.8084 10.2535C16.7558 9.34668 16.7558 7.87637 15.8084 6.96951C14.861 6.06265 13.325 6.06265 12.3776 6.96951L4.54387 14.4681C2.74382 16.1911 2.74382 18.9847 4.54387 20.7077C6.34391 22.4308 9.26237 22.4308 11.0624 20.7077L19.0105 13.0997C21.6632 10.5605 21.6632 6.44362 19.0105 3.90441C16.3578 1.3652 12.0569 1.3652 9.40419 3.90441L3 10.0346" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg></div>
+            <div class="Mic"><svg width="25px" height="25px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M47.67,28.43v3.38a15.67,15.67,0,0,1-31.34,0V28.43" stroke-linecap="round"></path><rect x="22.51" y="6.45" width="18.44" height="34.22" rx="8.89" stroke-linecap="round"></rect><line x1="31.73" y1="57.34" x2="31.73" y2="47.71" stroke-linecap="round"></line><line x1="37.14" y1="57.55" x2="26.43" y2="57.55" stroke-linecap="round"></line></g></svg></div>
+            <div class="SrcTxt"><p>Type a message</p></div>
+    </div>
+</body>
+</html>
